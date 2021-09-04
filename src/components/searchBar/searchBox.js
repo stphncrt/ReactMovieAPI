@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { StyledSearchBox, StyledInput, StyledButton } from "./searchStyle";
 
-function searchBox() {
+function SearchBox({ setQueryString }) {
+	const [text, setText] = useState("");
 	return (
-		<div>
-			<input />
-			<button onClick={() => {}}>Search</button>
-		</div>
+		<StyledSearchBox>
+			<StyledInput placeholder={"Text your movie name"} onChange={(e) => setText(e.target.value)} />
+			<StyledButton onClick={() => setQueryString(text)}>Search</StyledButton>
+		</StyledSearchBox>
 	);
 }
 
-export { searchBox };
+export { SearchBox };
