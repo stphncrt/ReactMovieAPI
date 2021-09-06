@@ -6,6 +6,7 @@ export const StyledSearchBox = styled.div `
 	gap: 1rem;
 	align-items: center;
 	justify-content: center;
+	margin-top: 2rem;
 `;
 export const StyledInput = styled.input `
 	width: 30%;
@@ -20,7 +21,18 @@ export const StyledButton = styled.button `
 	width: 10%;
 	height: 2.4rem;
 	font-size: 1rem;
-	background-color: cyan;
+	background-color: yellow;
 	border-radius: 0.5rem;
+	font-weight: 700;
+	
 
+`;
+
+export const StyledHeadText = styled.div `
+	color:yellow;
+	width:10%;
+	height: auto;
+	font-size: 2rem;
+	font-weight: 700;
+	
 `;

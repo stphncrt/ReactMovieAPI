@@ -25,7 +25,7 @@ function App() {
 	return (
 		<div className="App">
 			<SearchBox setQueryString={setQueryString} />
-
+			<hr color="yellow" width="90%" />
 			<CardList movieData={movieData} />
 		</div>
 	);

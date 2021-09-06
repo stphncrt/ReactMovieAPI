@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledCardWrapper = styled.div`
+export const StyledCardWrapper = styled.div `
 	margin: 10px;
 	width: 15%;
 	height: 350px;
@@ -11,21 +11,22 @@ export const StyledCardWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	transition: 0.2s;
+	background-color: white;
 
 	&:hover {
 		transform: scale(1.1);
 	}
 `;
-export const StyledText = styled.p`
+export const StyledText = styled.p `
 	color: rgba(0, 0, 60, 0.8);
 	font-size: 15px;
 	padding: 2px;
 	font-size: 1rem;
-
 	margin: 3px 3px 2px 3px;
+	
 `;
 
-export const StyledImg = styled.img`
+export const StyledImg = styled.img `
 	width: 90%;
 	height: 85%;
 	margin: 5px;

@@ -5,4 +5,6 @@ export const StyledCardListWrapper = styled.div `
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+   
+  
 `;
