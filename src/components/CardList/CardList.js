@@ -1,7 +1,10 @@
 import { Card } from "../Card/Card";
 import { StyledCardListWrapper } from "../CardList/CardListStyle";
+import { useContext } from "react";
+import { MovieContext } from "../../Movie";
 
-export function CardList({ movieData }) {
+export function CardList() {
+	const { movieData } = useContext(MovieContext);
 	return (
 		<StyledCardListWrapper>
 			{movieData &&
