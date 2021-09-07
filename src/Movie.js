@@ -23,10 +23,12 @@ function Movie() {
 			})
 			.then((res) => setMovieData(res.data.results));
 	}, [queryString]);
-
 	return (
 		<div className="App">
-			<MovieContext.Provider value={{ movieData }}>
+			<MovieContext.Provider
+				value={{
+					movieData,
+				}}>
 				<SearchBox setQueryString={setQueryString} />
 				<hr color="yellow" width="84%" />
 				<CardList />
