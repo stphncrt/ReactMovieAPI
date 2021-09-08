@@ -9,11 +9,11 @@ function SearchBox({ setQueryString }) {
 	return (
 		<StyledSearchBox>
 			<StyledHeadText>IMDB</StyledHeadText>
-
 			{/* Alternative codeblock of useRef
 			<StyledInput placeholder={"Text your movie name"} onChange={(e) => setText(e.target.value)} />
 			<StyledButton onClick={() => setQueryString(text)}> Search </StyledButton> */}
 			<StyledInput placeholder="Enter your movie name.." ref={inputRef} />
+
 			<StyledButton onClick={() => setQueryString(inputRef.current.value)}>Search</StyledButton>
 		</StyledSearchBox>
 	);

@@ -8,15 +8,14 @@ export const StyledWrapper = styled.div`
 	flex-direction: column;
 	display: flex;
 `;
-export const StyledIcon = styled.img`
-	color: yellow;
-	size: 30%;
-	:hover {
-		transition: scale 1.2;
-	}
-`;
 
 export const StyledText = styled.h1`
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: yellow;
 `;
+// export const StyledIcon = styled.div`
+// 	transition: 0.5s;
+// 	:hover {
+// 		transform: scale(1.2);
+// 	}
+// `;

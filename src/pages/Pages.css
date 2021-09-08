@@ -6,13 +6,17 @@
     background-color: black;
 }
 
-.App-link {
-    color: #61dafb;
-}
-
 .movieDetail {
     display: flex;
     justify-content: center;
     background-color: black;
     display: flex;
+}
+
+.icon {
+    transition: 0.5s;
+}
+
+.icon :hover {
+    transform: scale(1.2);
 }

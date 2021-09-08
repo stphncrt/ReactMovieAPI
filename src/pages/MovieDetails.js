@@ -23,9 +23,7 @@ function MovieDetails() {
 			})
 			.then((response) => setMovieDetail(response?.data));
 	}, []);
-
 	console.log(movieDetail);
-
 	return (
 		<div className="movieDetail">
 			<ImdbIcon />
