@@ -1,9 +1,9 @@
 import React, { useEffect, useState, createContext } from "react";
 import axios from "axios";
 
-import "./App.css";
-import { CardList } from "./components/CardList/CardList";
-import { SearchBox } from "./components/searchBar/searchBox";
+import "./Pages.css";
+import { CardList } from "../components/CardList/CardList";
+import { SearchBox } from "../components/searchBar/searchBox";
 const apiKey = "4cb9d7dff82867860339d6678ef42a52";
 const baseUrl = "https://api.themoviedb.org/3/search/movie";
 export const MovieContext = createContext();
@@ -24,7 +24,7 @@ function Movie() {
 			.then((res) => setMovieData(res.data.results));
 	}, [queryString]);
 	return (
-		<div className="App">
+		<div className="Movie">
 			<MovieContext.Provider
 				value={{
 					movieData,

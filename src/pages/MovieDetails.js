@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./Pages.css";
 import { useParams } from "react-router-dom";
-import {
-	StyledCardWrapper,
-	StyledText,
-	StyledTitle,
-} from "./components/MovieDetailCard/MovieCardDetailStyle";
+import MovieDetailCard from "../components/MovieDetailCard/MovieDetailCard";
+import ImdbIcon from "../components/IMDB/ImdbIcon";
+
 const baseUrl = "https://api.themoviedb.org/3/movie/";
 const apiKey = "4cb9d7dff82867860339d6678ef42a52";
 const baseImgUrl = "https://image.tmdb.org/t/p/w500";
@@ -28,11 +27,10 @@ function MovieDetails() {
 	console.log(movieDetail);
 
 	return (
-		<StyledCardWrapper>
-			<StyledTitle> {movieDetail.original_title} </StyledTitle>
-			<img src={imgUrl} alt="" />
-			<StyledText> {movieDetail.overview} </StyledText>
-		</StyledCardWrapper>
+		<div className="movieDetail">
+			<ImdbIcon />
+			<MovieDetailCard imgUrl={imgUrl} movieDetail={movieDetail} />
+		</div>
 	);
 }
 
