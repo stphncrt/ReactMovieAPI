@@ -1,8 +1,7 @@
 import React from "react";
 
-import { StyledWrapper, StyledText, StyledIcon } from "./ImdbIconStyles";
+import { StyledWrapper, StyledText } from "./ImdbIconStyles";
 import { useHistory } from "react-router-dom";
-import "../../assets/circle.png";
 import { FiChevronLeft } from "react-icons/fi";
 const ImdbIcon = () => {
 	const iconHistory = useHistory();

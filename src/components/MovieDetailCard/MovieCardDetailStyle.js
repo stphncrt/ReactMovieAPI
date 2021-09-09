@@ -24,10 +24,7 @@ export const StyledText = styled.p`
 	padding: 1rem;
 	font-size: 1.3rem;
 `;
-export const StyledTitle = styled.h1`
-	color: yellow;
-	font-size: 1.5rem;
-`;
+
 export const StyledTitleLink = styled.a`
 	color: yellow;
 	font-size: 1.5rem;
