@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCardWrapper = styled.div`
-	width: 50%;
+	width: 40%;
 	height: 55rem;
 
 	display: flex;
